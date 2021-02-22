@@ -42,7 +42,7 @@ def is_intersect(point, polygon_v1, polygon_v2):
           (point[1] == polygon_v2[1] and point[1] < polygon_v1[1])):
         return False
 
-    # The point of intersection is at the left of the ray
+    # The point of intersection is at the right of the ray
     elif (point[0] < polygon_v1[0] and point[0] <  polygon_v2[0] and
           (polygon_v1[1] < point[1] < polygon_v2[1] or polygon_v1[1] > point[1] > polygon_v2[1]) ):
         return True
