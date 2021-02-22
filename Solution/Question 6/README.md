@@ -4,6 +4,11 @@ To check if a point is inside a polygon, a ray is drawn from the point from left
 
 The following situations should not be considered as intersection.
 
+<p align="center">
+  <img src="intersects.jpg"  width="600" height="450">
+</p>
+
+
 ```python
 # The ray is parallel to the edge
     if polygon_v1[1] == polygon_v2[1]:
