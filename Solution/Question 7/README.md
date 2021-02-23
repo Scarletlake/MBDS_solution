@@ -23,9 +23,9 @@ Let the d-dimensional grid has sizes (L1, L2 ... Ln), I for the index
 
 `I(x1, x2) = f1*x1 + f2*x2 + ... + fn*xn`
 
-where f1=1, f2=L1, f3=L1 * L2, f3=L1 * L2 * L3, ... fn=L1 * L2 * L3 * ... * Ln-1
+where f1=1, f2=L1, f3=L1 * L2, f4=L1 * L2 * L3, ... fn=L1 * L2 * L3 * ... * Ln-1
 
-That is, f1=1, f2=L1, f3=f2 * L2, f3=f3 * L3, ... fn=fn-1 * Ln-1
+That is, f1=1, f2=L1, f3=f2 * L2, f4=f3 * L3, ... fn=fn-1 * Ln-1
 
 
 * Function converting index into coordinates in d-dimensional grid
@@ -33,7 +33,7 @@ That is, f1=1, f2=L1, f3=f2 * L2, f3=f3 * L3, ... fn=fn-1 * Ln-1
 xn = I // fn <br/>
 xn-1 = (I % fn) // fn-1 <br/>
 xn-2 = ((I % fn) % fn-1) // fn-2 <br/>
-xn-3 = (((I % fn) % fn-1) % fn-2) % fn-3 <br/>
+xn-3 = (((I % fn) % fn-1) % fn-2) // fn-3 <br/>
 
 .
 .
