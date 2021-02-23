@@ -21,7 +21,7 @@ Let the d-dimensional grid has sizes (L1, L2 ... Ln), I for the index
 
 * Function converting coordinates in d-dimensional grid to index (x1, x2, ... xn) is a linear function: 
 
-`I(x1, x2) = f1*x1 + f2*x2 + ... + fn*xn`
+`I(x1, x2, ... xn) = f1*x1 + f2*x2 + ... + fn*xn`
 
 where f1=1, f2=L1, f3=L1 * L2, f4=L1 * L2 * L3, ... fn=L1 * L2 * L3 * ... * Ln-1
 
