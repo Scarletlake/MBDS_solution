@@ -1,6 +1,6 @@
 ##  Question 7
 
-###  7_1(a)
+###  7_1
 
 Let the  2-dimensional grid has sizes (L1, L2), I for the index
 
@@ -15,7 +15,7 @@ x2 = I // L1   (the quotient of I/L1)<br/>
 x1 = I % L1    (the remainder of I/L1)
 
 
-###  7_1(b)
+###  7_2
 
 Let the d-dimensional grid has sizes (L1, L2 ... Ln), I for the index
 
