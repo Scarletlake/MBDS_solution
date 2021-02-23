@@ -1,6 +1,6 @@
 ## Question 6
 
-To check if a point is inside a polygon, a ray is drawn from the point from left to right, if this ray intersects with edges of polygon for odd number of times, then it is 
+To check if a point is inside a polygon, a ray is drawn from the point from left to right, if this ray intersects with edges of polygon for odd number of times, then it is inside the polygon.
 
 The following situations should not be considered as intersection.
 * The ray overlaps the edge
