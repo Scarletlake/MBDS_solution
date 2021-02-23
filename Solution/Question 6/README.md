@@ -5,7 +5,7 @@ To check if a point is inside a polygon, a ray is drawn from the point from left
 The following situations should not be considered as intersection.
 
 <p align="center">
-  <img src="intersects.jpg"  width="600" height="450">
+  <img src="q6_1.jpg" >
 </p>
 
 
@@ -40,6 +40,9 @@ The following situations should not be considered as intersection.
 
 To test if the point of intersection is at the left or right of side of the ray, the edge is considered as a linear function where the vertices are the points on that line. If the testing point is above the line, then the ray does not intersect with the edge.
 
+<p align="center">
+  <img src="q6_2.jpg" >
+</p>
 ```python
 # The point of intersection is at the left of the ray
     # Consider the edge as a function, if the point is above the
