@@ -3,9 +3,11 @@
 To check if a point is inside a polygon, a ray is drawn from the point from left to right, if this ray intersects with edges of polygon for odd number of times, then it is 
 
 The following situations should not be considered as intersection.
+* The ray overlaps the edge
+* The ray pass through one of the edge and it is below the edge
 
 <p align="center">
-  <img src="q6_1.jpg" >
+  <img src="q6_1.jpg" height=500 >
 </p>
 
 
@@ -41,8 +43,9 @@ The following situations should not be considered as intersection.
 To test if the point of intersection is at the left or right of side of the ray, the edge is considered as a linear function where the vertices are the points on that line. If the testing point is above the line, then the ray does not intersect with the edge.
 
 <p align="center">
-  <img src="q6_2.jpg" >
+  <img src="q6_2.jpg" height=300>
 </p>
+
 ```python
 # The point of intersection is at the left of the ray
     # Consider the edge as a function, if the point is above the
