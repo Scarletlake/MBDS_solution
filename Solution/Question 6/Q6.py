@@ -92,7 +92,7 @@ def test_location(points, polygon, output_file_name):
 
         # Check if the number of intersection is odd number or even number
         # if odd, then inside, otherwise outside
-        f.write(str(point[0]) + " " + str(point[1]) + " " + str(intersect_num)+ " ")
+        f.write(str(point[0]) + " " + str(point[1]) + " ")
         if intersect_num % 2 == 1:
             f.write("inside\n")
         else:
