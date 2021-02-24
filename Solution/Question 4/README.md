@@ -6,7 +6,7 @@ The image is stored as a 2d array, each element is a list `[cluster_num, labled]
 labled == 0 means not labled, labled == 1 means it is labled.
 
 
-To find the cluster the pixel belongs to, function `find_cluster` is called recursively. It will terminate if if it not connect to a pixel or it's neighbors is allready labled.
+To find the cluster the pixel belongs to, function `find_cluster` is called recursively. It will terminate if it does not connect to a pixel or it's neighbors is allready labled.
 
 
 ```python
