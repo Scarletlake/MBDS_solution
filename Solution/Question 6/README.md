@@ -81,16 +81,20 @@ To test if the point of intersection is at the left or right of side of the ray,
 </p>
 
 ```python
-# The point of intersection is at the left of the ray
-    # Consider the edge as a function, if the point is above the
-    # line, then the ray does not intersect with the edge.
-    # slop = (v1_x-v2_x)/(v1_y-v2_y)
-    elif ((polygon_v1[0]-polygon_v2[0])/(polygon_v1[1]-polygon_v2[1])*(point[0]-polygon_v1[0]) >
-          (point[1]-polygon_v1[1])):
-        return False
 
-    else:
-        return True
+    slop = (polygon_v1[0] - polygon_v2[0]) / (polygon_v1[1] - polygon_v2[1])
+    start_v = polygon_v1
+    end_v = polygon_v2
+    if polygon_v1[0] > polygon_v1[1]:
+        start_v = polygon_v2
+        end_v = polygon_v1
+        
+    if slop *(point[0]-start_v[0]) > (point[1]-start_v[1]): # below the line
+        if slop < 0:    
+            return False
+        else:
+            return True
+            
 ```
 
 
